@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7wI-XE-eX7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TextFiled 範例-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Delegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只能輸入10個字喔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46g-eq-2NT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字數統計" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlm-5Z-Cyd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="點我輸入唷" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-PB-6ce">
+                                <color key="backgroundColor" red="0.85130691250000001" green="1" blue="0.95593773400000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="blU-vK-s84"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vVb-PB-6ce" firstAttribute="top" secondItem="46g-eq-2NT" secondAttribute="bottom" constant="27" id="A5R-F7-YJm"/>
+                            <constraint firstItem="xlm-5Z-Cyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="EUD-Ec-35Y"/>
+                            <constraint firstItem="xlm-5Z-Cyd" firstAttribute="top" secondItem="vVb-PB-6ce" secondAttribute="bottom" constant="38" id="MS9-uG-GSS"/>
+                            <constraint firstItem="vVb-PB-6ce" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="NPu-u2-Hv1"/>
+                            <constraint firstItem="46g-eq-2NT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="abr-qv-9Pa"/>
+                            <constraint firstItem="46g-eq-2NT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="ja5-WT-Wst"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TextFiled 範例" id="mfv-9d-RLQ"/>
+                    <connections>
+                        <outlet property="LabelCount" destination="xlm-5Z-Cyd" id="Q7H-ci-mAf"/>
+                        <outlet property="insertFiled" destination="vVb-PB-6ce" id="O6P-D7-zlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="54.422788605697157"/>
+        </scene>
+        <!--TextView 範例-->
+        <scene sceneID="QCa-0d-8Jk">
+            <objects>
+                <viewController id="Cra-xQ-22X" customClass="SecondViewController" customModule="Delegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cTf-KV-3wd"/>
+                        <viewControllerLayoutGuide type="bottom" id="NEj-ZZ-510"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNi-CF-hzc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只能輸入10個字喔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vic-RW-oyZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字數統計" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMB-m0-I5z">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-5F-FBq">
+                                <color key="backgroundColor" red="0.85130691250000001" green="1" blue="0.95593773400000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZCN-fA-YFT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eJM-5F-FBq" firstAttribute="leading" secondItem="nNi-CF-hzc" secondAttribute="leadingMargin" constant="34" id="4U6-dJ-Ofh"/>
+                            <constraint firstItem="vic-RW-oyZ" firstAttribute="top" secondItem="cTf-KV-3wd" secondAttribute="bottom" constant="20" id="84d-QX-62s"/>
+                            <constraint firstItem="DMB-m0-I5z" firstAttribute="leading" secondItem="nNi-CF-hzc" secondAttribute="leadingMargin" constant="34" id="Apb-LS-cw5"/>
+                            <constraint firstItem="DMB-m0-I5z" firstAttribute="top" secondItem="vic-RW-oyZ" secondAttribute="bottom" constant="8" id="BQb-sU-Dhn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eJM-5F-FBq" secondAttribute="trailing" constant="69" id="gMc-eO-nDw"/>
+                            <constraint firstItem="eJM-5F-FBq" firstAttribute="top" secondItem="DMB-m0-I5z" secondAttribute="bottom" constant="18" id="kM0-fi-tQG"/>
+                            <constraint firstItem="vic-RW-oyZ" firstAttribute="leading" secondItem="nNi-CF-hzc" secondAttribute="leadingMargin" constant="34" id="mYX-7O-hRB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TextView 範例" id="9ci-Eg-goB"/>
+                    <connections>
+                        <outlet property="CountLabel" destination="DMB-m0-I5z" id="BLe-N7-CBj"/>
+                        <outlet property="insertTextView" destination="eJM-5F-FBq" id="bX1-Y9-DYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vU-Y5-jmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="z6E-ri-qA1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7wI-XE-eX7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="7tc-0y-0WG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ggC-Bw-RNl"/>
+                        <segue destination="Cra-xQ-22X" kind="relationship" relationship="viewControllers" id="mOj-2E-5JR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGk-cZ-bkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="54.422788605697157"/>
+        </scene>
+    </scenes>
+</document>
